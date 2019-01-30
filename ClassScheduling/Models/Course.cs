@@ -5,6 +5,7 @@ namespace ClassScheduling.Models
     {
         public Course()
         {
+            // this is a test
         }
     }
 }
