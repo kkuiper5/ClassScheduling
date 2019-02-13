@@ -10,18 +10,10 @@ namespace ClassScheduling.Models
 
 	public class Enrollment
 	{
-		//public Schedule(string scheduleID, string studentID, SEMESTER semester, List<Class> classes)
-		//{
-		//	ScheduleID = scheduleID;
-		//	StudentID = studentID;
-		//	Semester = semester;
-		//	Classes = classes;
-		//}
-
 		public string ID { get; set; }
 		public string StudentID { get; set; }
 		public string ClassID { get; set; }
-		public 
+		public GRADE Grade { get; set; }
 		
 		public virtual Student Student { get; set; }
 		public virtual Class Class { get; set; }

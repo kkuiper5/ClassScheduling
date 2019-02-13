@@ -7,16 +7,6 @@ namespace ClassScheduling.Models
 {
 	public class Course
 	{
-		//public Course(string courseID, int credits, string courseName,
-		//	List<Course> prereqs, List<SEMESTER> semestersOffered)
-		//{
-		//	CourseID = courseID;
-		//	Credits = credits;
-		//	CourseName = courseName;
-		//	Prerequisites = prereqs;
-		//	SemestersOffered = semestersOffered;
-		//}
-
 		[DatabaseGenerated(DatabaseGeneratedOption.None)]
 		public string ID { get; set; }
 		public int Credits { get; set; }

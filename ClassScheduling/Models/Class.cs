@@ -10,21 +10,6 @@ namespace ClassScheduling.Models
 
 	public class Class
 	{
-		//public Class(string classID, Course course, string room,
-		//	Instructor instructor, DateTime startTime, DateTime endTime,
-		//	string days, FORMAT format, SEMESTER semester)
-		//{
-		//	ClassID = classID;
-		//	Course = course;
-		//	Room = room;
-		//	Instructor = instructor;
-		//	StartTime = startTime;
-		//	EndTime = endTime;
-		//	Days = days;
-		//	Format = format;
-		//	Semester = semester;
-		//}
-
 		public string ID { get; set; }
 		public string Room { get; set; }
 		[DataType(DataType.Time)]

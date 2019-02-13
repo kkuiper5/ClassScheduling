@@ -6,19 +6,6 @@ namespace ClassScheduling.Models
 {
 	public class Student
 	{
-		//public Student(string studentID, string first, string last,
-		//	string id, string email, Address address, List<Major> majors,
-		//	List<Schedule> schedules)
-		//{
-		//	StudentID = id;
-		//	FirstName = first;
-		//	LastName = last;
-		//	EmailAddress = email;
-		//	Address = address;
-		//	Majors = majors;
-		//	Schedules = schedules;
-		//}
-
 		public string ID { get; set; }
 		[Required]
 		[StringLength(50)]

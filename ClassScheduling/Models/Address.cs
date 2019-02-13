@@ -9,16 +9,6 @@ namespace ClassScheduling.Models
 {
 	public class Address
 	{
-		//public Address(string addressID, string street, string city,
-		//	string stateProvince, int zip, string phone)
-		//{
-		//	AddressID = addressID;
-		//	Street = street;
-		//	City = city;
-		//	StateProvince = stateProvince;
-		//	Zip = zip;
-		//	Phone = phone;
-		//}
 		[Key]
 		[ForeignKey("Student")]
 		public string StudentID { get; set; }

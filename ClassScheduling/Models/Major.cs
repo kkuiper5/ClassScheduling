@@ -6,13 +6,6 @@ namespace ClassScheduling.Models
 {
     public class Major
     {
-  //      public Major(string majorID, string majorName, List<Course> majorCourses)
-		//{
-		//	MajorID = majorID;
-		//	MajorName = majorName;
-		//	MajorCourses = majorCourses;
-		//}
-
 		public string ID { get; set; }
 		[Required]
 		[Display(Name = "Major")]
