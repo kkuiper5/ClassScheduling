@@ -80,7 +80,7 @@
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Class.cs" />
-    <Compile Include="Models\Schedule.cs" />
+    <Compile Include="Models\Enrollment.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Major.cs" />
