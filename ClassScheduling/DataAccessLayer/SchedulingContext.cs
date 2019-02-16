@@ -35,6 +35,19 @@ namespace ClassScheduling.DataAccessLayer
 				.Map(t => t.MapLeftKey("CourseRefID")
 				.MapRightKey("MajorRefID")
 				.ToTable("CourseMajor"));
+
+			// many-to-many "self-referencing" relationship between courses
+			// and its pre- and post-requisites
+			modelBuilder.Entity<CourseRequisite>()
+				.HasRequired(c => c.Course)
+				.WithMany(cp => cp.Prerequisites)
+				.HasForeignKey(c => c.CourseID)
+				.WillCascadeOnDelete(false);
+
+			modelBuilder.Entity<CourseRequisite>()
+				.HasRequired(c => c.PrereqCourse)
+				.WithMany(cp => cp.Postrequisites)
+				.HasForeignKey(c => c.PrereqCourseID);
 		}
 	}
 }

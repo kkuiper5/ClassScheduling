@@ -17,8 +17,9 @@ namespace ClassScheduling.Models
 		public string CourseName { get; set; }
 		public ICollection<SEMESTER> SemestersOffered { get; set; }
 
-		// One-to-many self-referencing relationship
-		public virtual ICollection<Course> Prerequisites { get; set; }
+		// Many-to-many self-referencing relationship
+		public virtual ICollection<CourseRequisite> Prerequisites { get; set; }
+		public virtual ICollection<CourseRequisite> Postrequisites { get; set; }
 		public virtual ICollection<Class> Classes { get; set; }
 		public virtual ICollection<Major> Majors { get; set; }
 	}
