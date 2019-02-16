@@ -27,7 +27,14 @@ namespace ClassScheduling.DataAccessLayer
 		{
 			modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-
+			// many-to-many relationship between Course and Major tables
+			// which essentially creates a CourseMajor table, the way we 
+			// designed the database originally
+			modelBuilder.Entity<Course>()
+				.HasMany(c => c.Majors).WithMany(m => m.MajorCourses)
+				.Map(t => t.MapLeftKey("CourseRefID")
+				.MapRightKey("MajorRefID")
+				.ToTable("CourseMajor"));
 		}
 	}
 }
