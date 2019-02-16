@@ -37,7 +37,7 @@ namespace ClassScheduling.DataAccessLayer
 				.ToTable("CourseMajor"));
 
 			// many-to-many "self-referencing" relationship between courses
-			// and its pre- and post-requisites.
+			// and its pre- and post-requisites
 			// https://stackoverflow.com/questions/49214748/many-to-many-self-referencing-relationship
 			modelBuilder.Entity<CourseRequisite>()
 				.HasRequired(c => c.Course)
