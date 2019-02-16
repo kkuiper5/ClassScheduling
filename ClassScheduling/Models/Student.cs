@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClassScheduling.Models
 {
 	public class Student
 	{
+		// These StudentIDs will be in the A00000000 form
+		[DatabaseGenerated(DatabaseGeneratedOption.None)]
 		public string ID { get; set; }
 		[Required]
 		[StringLength(50)]

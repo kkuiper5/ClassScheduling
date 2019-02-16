@@ -7,6 +7,8 @@ namespace ClassScheduling.Models
 {
 	public class Course
 	{
+		// These CourseIDs will be in the form of CSCI000
+		// per Davenport's model
 		[DatabaseGenerated(DatabaseGeneratedOption.None)]
 		public string ID { get; set; }
 		public int Credits { get; set; }
@@ -15,8 +17,7 @@ namespace ClassScheduling.Models
 		public string CourseName { get; set; }
 		public ICollection<SEMESTER> SemestersOffered { get; set; }
 
-		// I'm not sure about this one. Is it a navigation property if
-		// it's a list of its own entity
+		// One-to-many self-referencing relationship
 		public virtual ICollection<Course> Prerequisites { get; set; }
 		public virtual ICollection<Class> Classes { get; set; }
 		public virtual ICollection<Major> Majors { get; set; }
