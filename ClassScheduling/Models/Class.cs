@@ -22,10 +22,12 @@ namespace ClassScheduling.Models
 		public FORMAT Format { get; set; }
 		public SEMESTER Semester { get; set; }
 		public string CourseID { get; set; }
-		public string InstructorID { get; set; }
+		//public string InstructorID { get; set; }
+		public string Instructor { get; set; }
+		public string CourseName { get; set; }
 
-		public virtual Course Course { get; set; }
-		public virtual Instructor Instructor { get; set; }
-		public virtual ICollection<Enrollment> Schedules { get; set; }
+		//public virtual Course Course { get; set; }
+		//public virtual Instructor Instructor { get; set; }
+		public virtual ICollection<Enrollment> Enrollments { get; set; }
 	}
 }

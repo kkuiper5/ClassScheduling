@@ -17,17 +17,17 @@ namespace ClassScheduling.DataAccessLayer
 
 		public DbSet<Student> Students { get; set; }
 		public DbSet<Address> Addresses { get; set; }
-		public DbSet<Major> Majors { get; set; }
+		//public DbSet<Major> Majors { get; set; }
 		public DbSet<Enrollment> Enrollments { get; set; }
-		public DbSet<Course> Courses { get; set; }
+		//public DbSet<Course> Courses { get; set; }
 		public DbSet<Class> Classes { get; set; }
-		public DbSet<Instructor> Instructors { get; set; }
+		//public DbSet<Instructor> Instructors { get; set; }
 
 		protected override void OnModelCreating(DbModelBuilder modelBuilder)
 		{
 			modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
 
-			// many-to-many relationship between Course and Major tables
+/*			// many-to-many relationship between Course and Major tables
 			// which essentially creates a CourseMajor table, the way we 
 			// designed the database originally
 			modelBuilder.Entity<Course>()
@@ -48,6 +48,7 @@ namespace ClassScheduling.DataAccessLayer
 				.HasRequired(c => c.PrereqCourse)
 				.WithMany(cp => cp.Postrequisites)
 				.HasForeignKey(c => c.PrereqCourseID);
+*/
 		}
 	}
 }

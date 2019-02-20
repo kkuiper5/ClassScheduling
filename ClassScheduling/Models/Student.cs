@@ -23,9 +23,11 @@ namespace ClassScheduling.Models
 		[Display(Name = "Email Address")]
 		public string EmailAddress { get; set; }
 		public string AddressID { get; set; }
+		// This will change
+		public List<String> Majors { get; set; }
 
 		public virtual Address Address { get; set; }
-		public virtual ICollection<Major> Majors { get; set; }
+		//public virtual ICollection<Major> Majors { get; set; }
 		public virtual ICollection<Enrollment> Enrollments { get; set; }
 	}
 }
