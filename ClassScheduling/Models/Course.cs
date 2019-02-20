@@ -1,24 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClassScheduling.Models
 {
 	public class Course
 	{
-		public Course(string courseID, int credits, string courseName,
-			List<Course> prereqs, List<SEMESTER> semestersOffered)
-		{
-			CourseID = courseID;
-			Credits = credits;
-			CourseName = courseName;
-			Prerequisites = prereqs;
-			SemestersOffered = semestersOffered;
-		}
-
-		public string CourseID { get; set; }
+		// These CourseIDs will be in the form of CSCI000
+		// per Davenport's model
+		[DatabaseGenerated(DatabaseGeneratedOption.None)]
+		public string ID { get; set; }
 		public int Credits { get; set; }
+		[Display(Name = "Course Name")]
+		[Range(0, 6)]
 		public string CourseName { get; set; }
-		public List<Course> Prerequisites { get; set; }
-		public List<SEMESTER> SemestersOffered { get; set; }
+		public ICollection<SEMESTER> SemestersOffered { get; set; }
+
+		// Many-to-many self-referencing relationship
+		public virtual ICollection<CourseRequisite> Prerequisites { get; set; }
+		public virtual ICollection<CourseRequisite> Postrequisites { get; set; }
+		public virtual ICollection<Class> Classes { get; set; }
+		public virtual ICollection<Major> Majors { get; set; }
 	}
 }
