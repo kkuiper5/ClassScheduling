@@ -8,10 +8,10 @@ namespace ClassScheduling.Controllers
 {
     public class StudentController : Controller
     {
-        public string Index()
+        public ActionResult Index()
         {
-            return "This is Index action method of StudentController";
-            //return View ();  ActionResult
+            //return "This is Index action method of StudentController";
+            return View("~/Views/Home/Index.cshtml");
         }
     }
 }
