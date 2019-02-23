@@ -84,8 +84,6 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\StudentController.cs" />
-    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Class.cs" />
     <Compile Include="Models\CourseRequisite.cs" />
@@ -94,6 +92,8 @@
     <Compile Include="Models\Course.cs" />
     <Compile Include="Models\Major.cs" />
     <Compile Include="Models\Instructor.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ScheduleController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Web.config" />
@@ -117,7 +117,9 @@
     <Content Include="Views\Student\Builder.cshtml" />
     <Content Include="Views\Student\Lookup.cshtml" />
     <Content Include="Views\Student\AddDrop.cshtml" />
-    <Content Include="Views\Home\View.cshtml" />
+    <Content Include="Views\Student\View.cshtml" />
+    <Content Include="Scripts\vue.min.js" />
+    <Content Include="Scripts\vue.js" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

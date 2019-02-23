@@ -6,11 +6,16 @@ using System.Web.Mvc;
 
 namespace ClassScheduling.Controllers
 {
-    public class CourseController : Controller
+    public class HomeController : Controller
     {
         public ActionResult Index()
         {
-            return View ();
+            return View("~/Views/Home/Index.cshtml");
+        }
+
+        public ActionResult Info()
+        {
+            return View("~/Views/Home/StudentInfo.cshtml");
         }
     }
 }

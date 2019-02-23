@@ -10,15 +10,21 @@ namespace ClassScheduling
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                name: "Student",
-                url: "student",
-                defaults: new { controller = "Student", action = "Index" }
+                name: "Home",
+                url: "home/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                );
+
+            routes.MapRoute(
+                name: "Schedule",
+                url: "schedule/{action}/{id}",
+                defaults: new { controller = "Schedule", action = "View", id = UrlParameter.Optional }
                 );
 
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Student", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
