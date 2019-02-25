@@ -4,14 +4,116 @@
     <meta name="viewport" content="width=device-width" />
     <title>Class Scheduling</title>
     <style>
-        .img2 {
-            margin-top: 100px;
+        i {
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 3px;
+            float: right;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+            margin: 5px 25px 0 0;
+        }
+        a:link {
+            text-decoration:none;
+            color: white;
+            font-weight: bolder;
+        }
+        a:visited {
+            text-decoration: none;
+            color: white;
+        }
+        a:hover {
+            text-decoration: none;
+            color: white;
+        }
+        a:active {
+            text-decoration: none;
+            color: white;
+        }
+        .about {
+            float: right;
+            width: 350px;
+            margin-right: 20%;
+            color: red;
+            line-height: 75%;
+            display: inline-block;
+        }
+        .mainMenu {
+            font-size: 20px;
+            text-shadow: 2px 2px gray;
+            padding: 15px 0 0 15px;
+            list-style-type: none;
+            background-color: #C9C9C9;
+            width: 350px;
+            height: 30px;
+            border: solid black;
+            border-width: 0 2px 2px 0;
+            margin-bottom: 5px;
+        }
+        .mainMenu:hover {
+            background-color: #8B8B8B;
+        }
+        .menuList {
+            display: inline-block;
+            margin-left: 18%;
+            width: 350px;
         }
     </style>
 </head>
 <body>
     <div class="img2">
         <p style="text-align:center;"><img src="~/Content/indexH2.jpg" width="900" /></p>
+    </div>
+    <div>
+        <ul class="menuList">
+            <li class="mainMenu">
+                <a href="@Url.Action("ViewSchedule", "Schedule")" class="elements">
+                    <span>View Schedule</span>
+                    <i></i>
+                </a>
+            </li>
+            <li class="mainMenu">
+                <a href="@Url.Action("Builder", "Schedule")" class="elements">
+                    <span>Schedule Builder</span>
+                    <i></i>
+                </a>
+            </li>
+            <li class="mainMenu">
+                <a href="@Url.Action("Lookup", "Schedule")" class="elements">
+                    <span>Lookup Classes</span>
+                    <i></i>
+                </a>
+            </li>
+            <li class="mainMenu">
+                <a href="@Url.Action("AddDrop", "Schedule")" class="elements">
+                    <span>Add/Drop Classes</span>
+                    <i></i>
+                </a>
+            </li>
+            <li class="mainMenu">
+                <a href="@Url.Action("Info", "Home")" class="elements">
+                    <span>Student Information</span>
+                    <i></i>
+                </a>
+            </li>
+        </ul>
+        <ul class="about">
+            <li>
+                <p>Try the new schedule builder!  It can </p>
+                <p>suggest optimal schedule options based on </p>
+                <p>your personal preferences if you are struggling </p>
+                <p>to schedule on your own</p>
+            </li>
+            <li>
+                <p>For traditional scheduling options, try Lookup</p>
+                <p>Classes or Add/Drop Classes</p>
+            </li>
+            <li>
+                <p>Make sure to keep your personal information</p>
+                <p>up to date!</p>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
