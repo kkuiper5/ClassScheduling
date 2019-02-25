@@ -104,7 +104,7 @@
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <Content Include="Content\main.css" />
+    <Content Include="Content\layout.css" />
     <Content Include="Views\Shared\_DavenportHeader.cshtml" />
     <Content Include="Content\header.jpg" />
     <Content Include="Content\addDropH2.jpg" />
@@ -121,6 +121,7 @@
     <Content Include="Scripts\vue.min.js" />
     <Content Include="Scripts\vue.js" />
     <Content Include="Scripts\dropdown.js" />
+    <Content Include="Content\index.css" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
