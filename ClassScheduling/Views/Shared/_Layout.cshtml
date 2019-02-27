@@ -3,13 +3,13 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Class Scheduling</title>
-    <link rel="stylesheet" type="text/css" href="~/Content/layout.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Styles/layout.css" />
     <script src="~/Scripts/vue.min.js"></script>
-    <script src="~/Scripts/dropdown.js"></script>
 </head>
 <body>
     <div>
         @{Html.RenderPartial("_DavenportHeader"); }
+        <a id="menuButton" href="@Url.Action("Index", "Home")">Main Menu</a>
         @RenderBody()
     </div>
 </body>

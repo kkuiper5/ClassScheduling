@@ -77,6 +77,8 @@
     <Folder Include="Content\" />
     <Folder Include="Scripts\" />
     <Folder Include="Views\Student\" />
+    <Folder Include="Content\Styles\" />
+    <Folder Include="Content\Images\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccessLayer\SchedulingContext.cs" />
@@ -104,15 +106,7 @@
     <Content Include="Web.config" />
     <Content Include="Global.asax" />
     <Content Include="packages.config" />
-    <Content Include="Content\layout.css" />
     <Content Include="Views\Shared\_DavenportHeader.cshtml" />
-    <Content Include="Content\header.jpg" />
-    <Content Include="Content\addDropH2.jpg" />
-    <Content Include="Content\builderH2.jpg" />
-    <Content Include="Content\indexH2.jpg" />
-    <Content Include="Content\infoH2.jpg" />
-    <Content Include="Content\lookupH2.jpg" />
-    <Content Include="Content\viewH2.jpg" />
     <Content Include="Views\Home\StudentInfo.cshtml" />
     <Content Include="Views\Student\Builder.cshtml" />
     <Content Include="Views\Student\Lookup.cshtml" />
@@ -120,8 +114,20 @@
     <Content Include="Views\Student\View.cshtml" />
     <Content Include="Scripts\vue.min.js" />
     <Content Include="Scripts\vue.js" />
-    <Content Include="Scripts\dropdown.js" />
-    <Content Include="Content\index.css" />
+    <Content Include="Content\Styles\addDrop.css" />
+    <Content Include="Content\Styles\builder.css" />
+    <Content Include="Content\Styles\index.css" />
+    <Content Include="Content\Styles\info.css" />
+    <Content Include="Content\Styles\layout.css" />
+    <Content Include="Content\Styles\lookup.css" />
+    <Content Include="Content\Styles\view.css" />
+    <Content Include="Content\Images\addDropH2.jpg" />
+    <Content Include="Content\Images\builderH2.jpg" />
+    <Content Include="Content\Images\header.jpg" />
+    <Content Include="Content\Images\indexH2.jpg" />
+    <Content Include="Content\Images\infoH2.jpg" />
+    <Content Include="Content\Images\lookupH2.jpg" />
+    <Content Include="Content\Images\viewH2.jpg" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

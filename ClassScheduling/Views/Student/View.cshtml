@@ -3,19 +3,41 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>View Schedule</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Styles/view.css" />
 </head>
 <body>
     <div class="img2">
-        <p style="text-align:center;"><img src="~/Content/viewH2.jpg" width="900" /></p>
+        <p style="text-align:center;"><img src="~/Content/Images/viewH2.jpg" width="900" /></p>
     </div>
-    <div class="dropdown">
-        <button class="dropbtn">Semester</button>
-        <div class="dropdown-content">
-            <a href="#">Winter 2019</a>
-            <a href="#">Spring/Summer 2019</a>
-            <a href="#">Fall 2019</a>
-            <a href="#">Winter 2020</a>
+    <div>
+        <div class="dropdown">
+            <button class="dropbtn">Semester</button>
+            <div class="dropdown-content">
+                <a href="#">Winter 2019</a>
+                <a href="#">Spring/Summer 2019</a>
+                <a href="#">Fall 2019</a>
+                <a href="#">Winter 2020</a>
+            </div>
         </div>
+        <div class="classList">
+            @using (Html.BeginForm("View", "Schedule"))
+            {
+                foreach (var course in Model.ScheduledCourses)
+                {
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"
+                                   name="ScheduledCourses"
+                                   value="@course.Value" /> @course.Text
+                        </label>
+                    </div>
+                }
+                <div class="form-group text-center">
+                    <input type="submit" class="btn btn-primary" value="Submit" />
+                </div>
+            }
+        </div>
+        <div class="classView"></div>
     </div>
 </body>
 </html>
