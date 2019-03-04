@@ -9,6 +9,11 @@ img {
 
 .img2 {
     margin-top: 100px;
+    max-width: 75%;
+    height: auto;
+    width: auto\9;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .dropbtn {
@@ -53,4 +58,12 @@ img {
 
 .dropdown:hover .dropbtn {
     background-color: #8B8B8B;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }

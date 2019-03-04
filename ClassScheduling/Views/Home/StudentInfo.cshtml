@@ -4,10 +4,45 @@
     <meta name="viewport" content="width=device-width" />
     <title>Student Information</title>
     <link rel="stylesheet" type="text/css" href="~/Content/Styles/info.css" />
+    @model ClassScheduling.Models.Student
 </head>
 <body>
     <div class="img2">
-        <p style="text-align:center;"><img src="~/Content/Images/infoH2.jpg" width="900" /></p>
+        <img src="~/Content/Images/infoH2.jpg" />
     </div>
+    <form id="stForm">
+        <ul class="left">
+            <li>
+                <label for="fName">First Name</label>
+                <input type="text" name="fName" value="" />
+            </li>
+            <li>
+                <label for="lName">Last Name</label>
+                <input type="text" name="lName" value="" />
+            </li>
+            <li>
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" value="" />
+            </li>
+        </ul>
+        <ul class="right">
+            <li>
+                <label for="street">Address</label>
+                <input type="text" name="street" value="" />
+            </li>
+            <li>
+                <label for="city">City</label>
+                <input type="text" name="city" value="" />
+            </li>
+            <li>
+                <label for="state">State</label>
+                <input type="text" name="state" value="" />
+            </li>
+            <li>
+                <label for="zip">Zip Code</label>
+                <input type="text" name="zip" value="" />
+            </li>
+        </ul>
+</form>
 </body>
 </html>

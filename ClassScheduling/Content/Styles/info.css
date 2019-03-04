@@ -1,6 +1,27 @@
 ﻿body {
 }
 
+input {
+    height: auto;
+    font-size: 25px;
+}
+
+label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+li {
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
 #menuButton {
     float: right;
     margin: 40px 18.5% 0 0;
@@ -15,4 +36,11 @@
 
 #menuButton:hover {
     background-color: #8B8B8B;
+}
+
+#stForm {
+    max-width: 75%;
+    height: auto;
+    width: auto\9;
+    margin: 0 auto 0 auto;
 }
