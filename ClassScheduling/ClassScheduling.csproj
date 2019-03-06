@@ -122,6 +122,8 @@
     <Content Include="Content\Images\infoH2.jpg" />
     <Content Include="Content\Images\lookupH2.jpg" />
     <Content Include="Content\Images\viewH2.jpg" />
+    <Content Include="Scripts\daypilot-all.min.js" />
+    <Content Include="Content\Styles\calendar_green.css" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

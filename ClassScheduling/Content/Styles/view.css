@@ -1,6 +1,15 @@
 ﻿body {
 }
 
+#dp {
+    max-width: 75%;
+    height: auto;
+    width: auto\9;
+    margin-top: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 #menuButton {
     float: right;
     margin: 40px 18.5% 0 0;
